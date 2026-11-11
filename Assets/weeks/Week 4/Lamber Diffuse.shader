@@ -44,13 +44,13 @@ Shader "Custom/LamberDiffuse"
         //To tell the shader where the vertices are in unity
 
             // Q2: Which included URP library provides lighting-related functions such as GetMainLight()?
-        // 
+        // The Lighting one
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-           
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 
  
 
-            struct Attributes
+            struct Attributes // Info from the mesh into the vertex shader
             {
 
                 float4 positionOS : POSITION;
@@ -62,10 +62,10 @@ Shader "Custom/LamberDiffuse"
 
             // Q3: Why must positionHCS use the SV_POSITION semantic?
 
-            struct Varyings
+            struct Varyings // Info from vertext shader to the fragment shader
             {
 
-                float4 positionHCS : SV_POSITION;
+                float4 positionHCS : SV_POSITION; //
                 float3 normalWS    : TEXCOORD0;
 
             };

@@ -77,7 +77,7 @@ Shader "Custom/MultiUV"
                 #endif
 
                 // Q7: What does TRANSFORM_TEX apply to the selected
-                // UV coordinates?  It add the tilling and ofset option in the inspector
+                // UV coordinates?  It adds the tilling and offset option in the inspector
 
                 return OUT;
             }

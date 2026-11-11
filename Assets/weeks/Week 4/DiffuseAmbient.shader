@@ -1,4 +1,4 @@
-Shader "Custom/DiffuseAmbient"
+    Shader "Custom/DiffuseAmbient"
 {
 
     Properties
