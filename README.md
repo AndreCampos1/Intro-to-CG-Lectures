@@ -1,2 +1,1 @@
-# Intro to CG Lectures
 
